@@ -8,7 +8,7 @@ from mlxtend.frequent_patterns import apriori, association_rules
 st.set_page_config(page_title="Koperasi Sales Dashboard", layout="wide")
 
 # Load Data
-@st.cache
+@st.cache_data
 def load_data():
     df = pd.read_excel("dataset_lowermh.xlsx")
     df['transaction_datetime'] = pd.to_datetime(df['transaction_datetime'])
