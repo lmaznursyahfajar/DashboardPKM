@@ -42,7 +42,7 @@ st.markdown(
 if menu == "📊 Dashboard":
     st.markdown("<h1 style='text-align: center;'> 🥛Dashboard Penjualan KUD Sarwa Mukti🥛</h1>", unsafe_allow_html=True)
     image = Image.open('coffe.jpg')
-    st.image(image, use_column_width=True)
+    st.image(image, use_container_width=True)
 
     st.markdown("""<style>
         .metric-container {background-color: #F5F5DC; padding: 10px; border-radius: 10px; text-align: center; margin-bottom: 10px;}
